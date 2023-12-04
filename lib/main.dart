@@ -11,18 +11,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: const Text(
-            'Flutter Books',
-            style: TextStyle(fontSize: 25),
-          ),
-        ),
-        body: Column(
-          children: [],
-        ),
+      title: 'Flutter Books App',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
+      home: const Text('Hello to Flutter Book App'),
     );
   }
 }
